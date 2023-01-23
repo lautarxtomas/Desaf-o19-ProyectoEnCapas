@@ -33,3 +33,196 @@
   responseCode: 534,
   command: 'AUTH PLAIN'
 }
+[2023-01-22T23:40:11.661] [ERROR] default - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor w11-20020a0568080d4b00b0035c422bb303sm22425796oik.19 - gsmtp
+    at SMTPConnection._formatError (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at SMTPConnection._onSocketData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor w11-20020a0568080d4b00b0035c422bb303sm22425796oik.19 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+[2023-01-22T23:41:03.514] [ERROR] default - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 2-20020aca0602000000b0036508145326sm11259052oig.9 - gsmtp
+    at SMTPConnection._formatError (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at SMTPConnection._onSocketData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 2-20020aca0602000000b0036508145326sm11259052oig.9 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+[2023-01-22T23:42:07.713] [ERROR] default - MongoServerError: E11000 duplicate key error collection: terceraEntrega.usuarios index: username_1 dup key: { username: "lauti" }
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { username: 1 },
+  keyValue: { username: 'lauti' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-01-22T23:42:13.460] [ERROR] default - MongoServerError: E11000 duplicate key error collection: terceraEntrega.usuarios index: username_1 dup key: { username: "lauti" }
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { username: 1 },
+  keyValue: { username: 'lauti' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-01-22T23:42:34.187] [ERROR] default - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor z26-20020a056830129a00b00686b47471eesm3668367otp.73 - gsmtp
+    at SMTPConnection._formatError (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at SMTPConnection._onSocketData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor z26-20020a056830129a00b00686b47471eesm3668367otp.73 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+[2023-01-22T23:44:54.912] [ERROR] default - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor c15-20020a4ae24f000000b004f28d09a880sm14140733oot.13 - gsmtp
+    at SMTPConnection._formatError (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at SMTPConnection._onSocketData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor c15-20020a4ae24f000000b004f28d09a880sm14140733oot.13 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+[2023-01-22T23:56:17.504] [ERROR] default - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor c15-20020a4ae24f000000b004f28d09a880sm14149019oot.13 - gsmtp
+    at SMTPConnection._formatError (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at SMTPConnection._onSocketData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor c15-20020a4ae24f000000b004f28d09a880sm14149019oot.13 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+[2023-01-23T00:00:25.742] [ERROR] default - MongoServerError: E11000 duplicate key error collection: terceraEntrega.usuarios index: username_1 dup key: { username: "pedro" }
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { username: 1 },
+  keyValue: { username: 'pedro' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-01-23T00:01:12.509] [ERROR] default - MongoServerError: E11000 duplicate key error collection: terceraEntrega.usuarios index: username_1 dup key: { username: "juana" }
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { username: 1 },
+  keyValue: { username: 'juana' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-01-23T00:01:30.470] [ERROR] default - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor e8-20020a544f08000000b0035aa617156bsm22734959oiy.17 - gsmtp
+    at SMTPConnection._formatError (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at SMTPConnection._onSocketData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor e8-20020a544f08000000b0035aa617156bsm22734959oiy.17 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+[2023-01-23T00:06:52.080] [ERROR] default - MongoServerError: E11000 duplicate key error collection: terceraEntrega.usuarios index: username_1 dup key: { username: "pepardo" }
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { username: 1 },
+  keyValue: { username: 'pepardo' },
+  [Symbol(errorLabels)]: Set(0) {}
+}

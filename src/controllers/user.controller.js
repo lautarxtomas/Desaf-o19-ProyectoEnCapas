@@ -1,8 +1,5 @@
 import { UsuarioService } from '../services/usuario.service.js';
-import { sendGmail } from "../utils/notifications/gmail/EmailSender.js";
-import { htmlNewUserTemplate } from "../utils/notifications/gmail/htmltemplates/NewUserCreatedTemplate.js";
-
-
+import logger from '../utils/loggers/Log4jsLogger.js'
 
 const usuarioService = new UsuarioService();
 
@@ -27,13 +24,10 @@ export async function signUp(req, res) {
     const newUser = await usuarioService.createUser(body);
 
     if (newUser) {
-        // Descomentar si has llenado el .env con tu email y password de Gmail.
         
-        const now = new Date();
-        const newUserTemplateEmail = htmlNewUserTemplate(newUser._id, now.toLocaleString());
-        await sendGmail('Nuevo usuario creado', newUserTemplateEmail);
-        
-        res.status(200).json({"success": "User added with ID " + newUser._id})
+        logger.info('Nuevo usuario creado!')
+
+        res.redirect('/api/usuario/login')
     } else {
         res.status(400).json({"error": "there was an error, please verify the body content match the schema"})
     }

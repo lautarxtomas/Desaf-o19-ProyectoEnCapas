@@ -2,6 +2,8 @@ import "../configs/db.config.js";
 import { UsuariosModel } from "../models/usuarios.model.js";
 import logger from "../utils/loggers/Log4jsLogger.js";
 
+import { transporter, options, sendMail } from "../utils/notifications/emailSender.js";
+
 export class UsuarioService {
 
     ID_FIELD = "_id";
@@ -9,6 +11,7 @@ export class UsuarioService {
     
     async createUser(object) {
         try {
+            sendMail(transporter, options)
             return await UsuariosModel.create(object);
         } catch (error) {
             logger.error(error);
