@@ -1,0 +1,35 @@
+[2022-06-25T21:38:45.706] [ERROR] default - Error: listen EADDRINUSE: address already in use :::3031
+    at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+    at listenInCluster (node:net:1382:12)
+    at Server.listen (node:net:1469:7)
+    at Function.listen (/home/esteban/Desktop/Backend/Entrega-19/node_modules/express/lib/application.js:618:24)
+    at file:///home/esteban/Desktop/Backend/Entrega-19/src/server.js:81:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:185:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:281:24)
+    at async loadESM (node:internal/process/esm_loader:88:5)
+    at async handleMainPromise (node:internal/modules/run_main:65:12) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3031
+}
+[2023-01-22T16:25:26.118] [ERROR] default - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y34-20020a05687045a200b00143ae7d4ccesm10940557oao.45 - gsmtp
+    at SMTPConnection._formatError (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at SMTPConnection._onSocketData (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y34-20020a05687045a200b00143ae7d4ccesm10940557oao.45 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
