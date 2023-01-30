@@ -18,17 +18,26 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(loggerMiddleware);
-app.use(express.static('public'));
+// app.use(express.static('public'));
 app.use(compression());
-app.set('views', './views');
-app.set('view engine', 'hbs');
 
+// handlebars config
 app.engine('hbs', engine({
     extname: '.hbs',
     defaultLayout: 'index.hbs',
     layoutsDir: __dirname + '/views/layouts',
     partialsDir: __dirname + '/views/partials'
 }))
+app.set('views', './views');
+app.set('view engine', 'hbs');
+
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+    next();
+});
 
 app.use(
     session({

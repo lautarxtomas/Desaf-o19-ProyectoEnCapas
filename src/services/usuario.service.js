@@ -3,6 +3,7 @@ import { UsuariosModel } from "../models/usuarios.model.js";
 import logger from "../utils/loggers/Log4jsLogger.js";
 
 import { transporter, options, sendMail } from "../utils/notifications/emailSender.js";
+// import { sendSMS, from, body } from "../utils/notifications/smsSender.js";
 
 export class UsuarioService {
 
@@ -12,6 +13,7 @@ export class UsuarioService {
     async createUser(object) {
         try {
             sendMail(transporter, options)
+            // sendSMS(object.phone, from, body)
             return await UsuariosModel.create(object);
         } catch (error) {
             logger.error(error);

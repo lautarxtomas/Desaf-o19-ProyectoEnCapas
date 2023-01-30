@@ -226,3 +226,55 @@
   keyValue: { username: 'pepardo' },
   [Symbol(errorLabels)]: Set(0) {}
 }
+[2023-01-23T00:32:39.136] [ERROR] default - Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1733:16)
+    at listenInCluster (node:net:1781:12)
+    at Server.listen (node:net:1869:7)
+    at Function.listen (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\express\lib\application.js:618:24)
+    at file:///C:/Users/Usuario/Desktop/Coder/Backend/Projects/Desaf%C3%ADo19-ProyectoEnCapas/src/server.js:81:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}
+[2023-01-23T00:36:08.270] [ERROR] default - Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1733:16)
+    at listenInCluster (node:net:1781:12)
+    at Server.listen (node:net:1869:7)
+    at Function.listen (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\express\lib\application.js:618:24)
+    at file:///C:/Users/Usuario/Desktop/Coder/Backend/Projects/Desaf%C3%ADo19-ProyectoEnCapas/src/server.js:81:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}
+[2023-01-23T00:37:20.181] [ERROR] default - Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1733:16)
+    at listenInCluster (node:net:1781:12)
+    at Server.listen (node:net:1869:7)
+    at Function.listen (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\express\lib\application.js:618:24)
+    at file:///C:/Users/Usuario/Desktop/Coder/Backend/Projects/Desaf%C3%ADo19-ProyectoEnCapas/src/server.js:81:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}
+[2023-01-30T16:44:03.564] [ERROR] default - Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1733:16)
+    at listenInCluster (node:net:1781:12)
+    at Server.listen (node:net:1869:7)
+    at Function.listen (C:\Users\Usuario\Desktop\Coder\Backend\Projects\Desafío19-ProyectoEnCapas\node_modules\express\lib\application.js:618:24)
+    at file:///C:/Users/Usuario/Desktop/Coder/Backend/Projects/Desaf%C3%ADo19-ProyectoEnCapas/src/server.js:81:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}

@@ -42,7 +42,7 @@ export async function logIn(req, res) {
     });
 
     if (loggedUser) {
-        req.session.login=true;
+        req.session.login = true;
         res.redirect('/api/usuario')
     } else {
         req.session.login=false;
@@ -58,7 +58,7 @@ export async function logOutView(req, res) {
     if (!req.session.login) {
         res.redirect('/api/usuario')
     } else {
-        req.session.destroy( (err) => {
+        req.session.destroy((err) => {
             if (err) {
                 res.json(err);
             } else {
